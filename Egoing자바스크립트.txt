@@ -1,0 +1,116 @@
+Math.pow(a.b);
+Math.round(a.b); a.b를 반올림 
+Math.ceil(a.b); a.b를 올림
+Math.floor(a.b); a.b를 내림
+Math.sqrt(9); 결과값 3 / 3의 제곱근
+Math.random(); 0 ~ 1.0 사이의 랜덤한 숫자
+
+  alert(typeof "1")
+* typeof는 값의 데이터 형을 알려주는 기능 	
+* \n 줄바꿈을 의미하는 특수한 문자
+
+자바스크립트에서 변수는 var로 시작한다.
+* 연산자 == 와 ===
+- === 연산자는 데이터 타입까지 비교해서 boolean을 반환한다.
+ 
+prompt() 함수
+
+boolean의 대체제
+if(1) = 실행됨 // if(0) = 실행안됨
+
+false로 간주되는 데이터 형
+if('')
+if(undefined)
+if(null)
+if(NaN)
+
+개발자 도구를 이용한 디버거 연습해보기.
+*watch Expression 
+
+배열이 가지고 있는 명령어 
+*push()
+ex) 배열변수.push('f');
+배열에 f를 추가
+
+*concat()
+ex) 배열변수.concat(['f'.'g']);
+배열에 f,g를 추가
+
+*unshift()
+ex) 배열변수.unshift('z');
+배열 맨앞에 z를 추가
+
+*splice()
+ex)a = ["a", "b", "c"];
+	
+	a.splice(1,0,'d');
+	---> ['a','d','b','c']
+	
+	a.splice(1,1,'x','y');
+	----> ['a','x','y','c']
+	
+제거/정렬
+
+*shift() (첫번째 원소를 제거하는 함수)
+
+*pop() (맨뒤의 원소를 제거하는 함수)
+
+*sort() (정렬)
+
+*reverse() (거꾸로 정렬)
+
+객체
+ex)	var grades = {};
+	grades['egoing'] = 10;
+	grades['k8805'] = 6;
+	grades['sorialgi'] = 80;	
+	           KEY       VALUE
+
+	alert(grades['sorialgi']);
+	==
+	alert(grades.sorialgi);
+    
+
+★ 배열은 '순서'라는 개념을 가지고 있다.! -중요-
+★ 반면에 객체는 순서가없고 key와 value가 존재한다.
+
+	var obj = {'soulstrk': 10, 'korea': 20, 'been': 30};
+      for(var name in obj){
+        document.write("key :"+key+" value :"+obj[key]+"<br />");
+      }
+
+///////////////////////////////////////////////
+
+모듈
+
+jQuery 라이브러리 
+
+$('#list li').text('coding');
+
+//////////////////////////////////////////////// 4월 17일
+
+ 
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

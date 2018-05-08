@@ -1,0 +1,72 @@
+Object 객체 
+
+toStirng(), hashCode(), equals(), clone() 빈도 수가 높은 오브젝트 메소드들.
+equals() 메소드를 제대로 사용하려면 hashCode() 메소드도 함께 구현해야한다.
+
+*객체 간의 동일성을 비교하고 싶을 때는 ==를 사용하지 말고 equals() 메소드를 이용하자.
+*equals() 메소드를 구현해야 한다면 hashCode() 메소드도 함께 구현해야 함을 알고 이에 대해 분명히 학습한 후에 구현하자.
+*연산자 ==는 원시 데이터 형을 비교할 대만 사용하자.
+*toStirng() 메소드는 가급적 직적 구현하는 것을 권장
+
+finalize() 사용할 일 별로 없음.
+가비지 컬렉션 
+* 좋은 애플리케이션이란 RAM을 효율적으로 사용하는 애플리케이션이라고 할 수 있다.
+
+clone() 메소드
+* clone()을 사용하기 위해서는 implements Cloneable 이라고 인터페이스를 상속해야함 (약속)
+* clone()메소드는 제어자가 protected 이므로 
+//
+ public Object clone() throw CloneNotSupporttedException{
+	return super.clone();
+	}
+//	Clone method Exemple
+* clone() 메소드의 반환 값은 Object라서 명시적 형변환도 해줘야함.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+상수와 enum - 이클립스 예제로 복습
+
+* 열거형에는 어떤 데이터가 있는지 몰라도 마치 배열처럼 그 안에 있는 데이터를 하나씩 꺼내서 처리하는 기능을 제공
+* value() 메소드가 그 기능을 제공!
+        for (Fruit f : Fruit.values()) {
+			f.disCount();
+			System.out.println(f.getPrice());
+		}
+------------------------------------------------ 예시
+* 열거형은 그 자체가 클래스이기 때문에 생성자,필드,메소드를 다 가질 수 있고 또한 value()를 통해서 배열을 가져올 수 있다.
+
+////////////////////////////////////////////////////////////////////
+
+제네릭
+
+abstract class Info{
+    public abstract int getLevel();
+}
+class EmployeeInfo extends Info{
+    public int rank;
+    EmployeeInfo(int rank){ this.rank = rank; }
+    public int getLevel(){
+        return this.rank;
+    }
+}
+//////////////// extends 를 하므로써 T로 들어온 값이 info의 자식인가 체크 하므로써 제네릭사용에 제한을 둔다.
+class Person<T extends Info>{
+    public T info;
+    Person(T info){ this.info = info; }
+}
+public class GenericDemo {
+    public static void main(String[] args) {
+        Person p1 = new Person(new EmployeeInfo(1));
+        Person<String> p2 = new Person<String>("부장");
+    }
+}
+
+
+
+
+
+
+
+
+
+

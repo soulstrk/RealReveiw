@@ -1,0 +1,31 @@
+﻿Object 클래스 ( 최상위 클래스 )
+
+equals - 객체가 가진 값을 비교할 때 사용
+
+toString - 객체가 가진 값을 문자열로 반환
+ex ) public String toString() {
+		return "Owen Ovadoz";
+		}
+
+hashCode - 객체의 해시코드 값 반환
+
+많이 쓰이는 세가지
+
+반드시 오버라이딩 해서 사용 !!
+//////////////////////////////////////////
+
+java.lang 패키지
+
+1.wrapper class 기본형 데이터 타입의 객체화를 가능하게 하는 클래스
+2.Object
+3.String
+4.StirngBuffer
+5.StringBuilder
+6.System
+7.Math 
+ect..
+
+오토박싱과 오토언박싱의 개념 다시 생각해보기
+//////////////////////////////////////////////
+
+
