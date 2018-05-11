@@ -4,12 +4,12 @@ public class Exercise7_19 {
 	public static void main(String args[]) {
 		Buyer b = new Buyer();
 		b.buy(new Tv());
-		b.buy(new Computer());
+		b.buy(new Computer1());
 		b.buy(new Tv());
 		b.buy(new Audio());
-		b.buy(new Computer());
-		b.buy(new Computer());
-		b.buy(new Computer());
+		b.buy(new Computer1());
+		b.buy(new Computer1());
+		b.buy(new Computer1());
 		b.summary();
 	}
 }
@@ -79,8 +79,8 @@ class Tv extends Product {
 	}
 }
 
-class Computer extends Product {
-	Computer() {
+class Computer1 extends Product {
+	Computer1() {
 		super(200);
 	}
 
