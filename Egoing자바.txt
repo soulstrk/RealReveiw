@@ -61,7 +61,34 @@ public class GenericDemo {
     }
 }
 
+/////////////////////////////////////////////////////////////////
+Collections framework 마지막 강의
 
+1.배열은 항상 크기를 정해줘야만 하는 문제를 해결하기위해 만든 것.
+
+*ArrayList 많이 사용/배열과 비슷한 일을 처리/생성할때 인덱스값 지정 x
+------ <> 라는 제네릭 개념 사용/배열과
+
+* Collection      //  Map
+Set/List/Queue    //
+
+* HashSet     
+Set - 순서가 없다.
+List - 순서가 있어서 인덱스 값을 가질 수 있다.
+* collection 인터페이스의 iterator() !!
+iterator 반복
+iterator는 hasNext(),next() 등을 가짐.
+
+*Map
+key(중복x)//     value(중복가능)
+"one"  ------->   1
+"two"  ------->   2
+"three" ------>   3 
+
+*HashMap <제네릭 key의 데이터타입 value의 데이터타입 두가지 필요>
+
+컬렉션 프레임웤을 사용했을때 중요한게 정렬!
+compareTo 라는 메소드를 이용해서 어떤 객체를 비교해서 정렬할 수 있다.
 
 
 
