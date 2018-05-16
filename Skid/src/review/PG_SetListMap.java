@@ -1,14 +1,11 @@
 package review;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class PG_SetListMap {
 
 	public static void main(String[] args) {
-		/*Set<String> set1 = new HashSet<>();
+		Set<String> set1 = new HashSet<>();
 		boolean flag = set1.add("hello");
 		boolean flag1 = set1.add("Kim");
 		boolean flag2 = set1.add("hello");
@@ -23,10 +20,10 @@ public class PG_SetListMap {
 		 while(iter.hasNext()) {
 			 String str = iter.next();
 			 System.out.println(str);
-		 }*/ // Set과 iterator 설명
+		 } // Set과 iterator 설명
 		//---------------------------------------
 		
-		/*List<String> list = new ArrayList<>();
+		List<String> list = new ArrayList<>();
 		list.add("yong");
 		list.add("kang");
 		list.add("yong");
@@ -35,10 +32,10 @@ public class PG_SetListMap {
 				
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
-		}*/ // list 
+		} // list 
 		//-----------------------------------
 		
-		Map<String, String> map = new HashMap<>();
+		/*Map<String, String> map = new HashMap<>();
 		map.put("001", "kim");
 		map.put("002", "lee");
 		map.put("003", "kang");
@@ -52,7 +49,7 @@ public class PG_SetListMap {
 		Iterator<String> iter = key.iterator();
 		while(iter.hasNext()) {
 			System.out.println(iter.next());
-		}
+		}*/
 		
 	}
 
